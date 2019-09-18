@@ -42,7 +42,7 @@ public enum Operator {
     return token;
   }
 
-  //TODO for later
-
-
+  public static String tokenPattern(){
+    return "(?:^|\\s)(\\+|\\-|\\*|\\/|\\^|\\%|sqrt)( ?:\\s)";
+  }
 }
