@@ -41,4 +41,8 @@ public enum Operator {
   public String toString() {
     return token;
   }
+
+  //TODO for later
+
+
 }
