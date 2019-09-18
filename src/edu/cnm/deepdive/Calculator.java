@@ -5,7 +5,6 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.LinkedList;
 
-
 public class Calculator {
 
   private Scanner scanner;
@@ -20,18 +19,18 @@ public class Calculator {
     this.scanner = scanner;
     operands = new LinkedList<>();
   }
-
   public void process() {
     try {
       while (scanner.hasNextDouble()) {
         operands.push(scanner.nextDouble());
       }
 
-
   } catch(NoSuchElementException ignored) {
 
     } finally {
+
     System.out.println(operands);
+
   }
 }
 
